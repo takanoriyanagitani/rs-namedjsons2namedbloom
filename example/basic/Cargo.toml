@@ -1,0 +1,20 @@
+[package]
+name = "basic"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+
+[profile.release-wasi]
+inherits = "release"
+lto = true
+strip = true
+opt-level = 's'
+codegen-units = 16
+
+[dependencies.rs-namedjsons2namedbloom]
+path = "../.."
