@@ -1,0 +1,40 @@
+[package]
+name = "rs-namedjsons2namedbloom"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies.der]
+version = "0.7.10"
+default-features = false
+features = [
+	"derive",
+	"std",
+]
+
+[dependencies.zip]
+version = "4.0.0"
+default-features = false
+features = [
+	"deflate",
+]
+
+[dependencies.flate2]
+version = "1.1.1"
+default-features = false
+features = [
+	"rust_backend",
+]
+
+[dependencies.serde_json]
+version = "1.0.140"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.sha2]
+version = "0.10.9"
+default-features = false
+features = [
+	"std",
+]
